@@ -1,19 +1,26 @@
 {
-  "name": "refactor-app",
+  "name": "refacto",
   "version": "1.0.0",
-  "main": "dist/index.js",
+  "main": "index.js",
   "scripts": {
-    "build": "tsc",
-    "start": "node dist/index.js",
-    "dev": "ts-node src/index.ts"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node index.ts",
+    "refactor": "ts-node -r dotenv/config src/refactorFiles.ts input"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
   "dependencies": {
-    "dotenv": "^16.0.0",
-    "openai": "^4.0.0"
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "fs": "^0.0.1-security",
+    "openai": "^4.89.0"
   },
   "devDependencies": {
-    "@types/node": "^18.14.0",
-    "ts-node": "^10.9.1",
-    "typescript": "^4.9.5"
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.13.13",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
   }
-} 
+}
